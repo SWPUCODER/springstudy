@@ -1,18 +1,13 @@
 package com.huang.pojo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class People {
 
-    public People() {
-    }
-
-    public People(Cat cat, Dog dog, String name) {
-        this.cat = cat;
-        this.dog = dog;
-        this.name = name;
-    }
-
+    @Autowired
     private Cat cat;
 
+    @Autowired
     private Dog dog;
 
     private String name;
